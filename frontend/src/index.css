@@ -1,0 +1,259 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #603bbb;
+  cursor: pointer;
+}
+
+.dashboard-container{
+  min-height: 100vh;
+}
+
+.login {
+ 
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #e9e9e9;
+  display: flex;
+  align-items: center;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+.login .loginContainerRegister {
+  padding: 0px 60px; 
+  margin: 0 auto;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+  
+}
+
+.login .loginContainerRegister h1{
+  text-align: center;
+  color:red;
+  margin-bottom: 3px;
+}
+
+.login .loginContainer label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+.login .loginContainerRegister label {
+  color: white;
+  margin: 10px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px 0px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+.login .loginContainerRegister input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 10px 0px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+
+.btnContainer p {
+  margin: 14px 0;
+  text-align: right;
+  color: #fff;
+}
+
+ .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+
+
+/* ***********nav bar************ */
+.nav-items{
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav-items-inner-div{
+  display: flex;
+  align-items: center;
+}
+
+.nav-items-second-div{
+  display: flex;
+  align-items: center;
+}
+.nav-items-inner-div li img{
+  height: 40px;
+}
+
+nav{
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+
+.nav-items-inner-div li h3{
+  color: var(--white);
+  margin: 3px 30px;
+}
+
+ul{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+nav ul li a{
+  text-decoration: none;
+  margin: 10px;
+  padding: 5px 5px;
+  list-style-type: none;
+  color: var(--white);
+  transition: color .5s ease , background .5s ease;
+  
+}
+
+
+nav ul li a:hover{
+  color: var(--white);
+  text-decoration: none;
+  border: 3px solid var(--white);
+  outline: 1px solid var(--black);
+  outline-offset: 3px solid var(--black);
+ 
+  
+}
+
+/* **********form dashboard********* */
+
+.form-dashboard{
+    max-width: 30rem;
+    margin: 0 auto;
+       
+}
+
+
+.form-dashboard > div{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.form-dashboard label{
+    margin: 0.5rem 0;
+
+}
+
+/* ********cards********* */
+.main-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-container{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+
+.box{
+  flex : 0 0 calc(25% - 1rem)
+
+}
+
+
+.error-message{
+  text-align: center;
+    color: red;
+}
+.success-message{
+  text-align: center;
+    color: green;
+}
